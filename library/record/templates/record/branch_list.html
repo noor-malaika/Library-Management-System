@@ -1,0 +1,15 @@
+<h1>Data Visualized</h1>
+<table>
+    <tr>
+        <th>Branch ID</th>
+        <th>Branch Name</th>
+        <th>Branch Address</th>
+    </tr>
+    {% for branch in branches %}
+        <tr>
+            <td>{{ branch.library_branch_branchid }}</td>
+            <td>{{ branch.library_branch_branchname }}</td>
+            <td>{{ branch.library_branch_branchaddress }}</td>
+        </tr>{% csrf_token %}
+    {% endfor %}
+</table>

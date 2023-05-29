@@ -1,0 +1,15 @@
+<h1>Data Visualized</h1>
+<table>
+    <tr>
+        <th>Author ID</th>
+        <th>Book ID</th>
+        <th>Author Name</th>
+    </tr>
+    {% for author in authors %}
+        <tr>
+            <td>{{ author.book_authors_authorid }}</td>
+            <td>{{ author.book_authors_bookid }}</td>
+            <td>{{ author.book_authors_authorname }}</td>
+        </tr>{% csrf_token %}
+    {% endfor %}
+</table>

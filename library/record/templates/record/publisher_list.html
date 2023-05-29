@@ -1,0 +1,15 @@
+<h1>Data Visualized</h1>
+<table>
+    <tr>
+        <th>Publisher Name</th>
+        <th>Publisher Address</th>
+        <th>Publisher Phone</th>
+    </tr>
+    {% for publisher in publishers %}
+        <tr>
+            <td>{{ publisher.publisher_publishername }}</td>
+            <td>{{ publisher.publisher_publisheraddress }}</td>
+            <td>{{ publisher.publisher_publisherphone }}</td>
+        </tr>{% csrf_token %}
+    {% endfor %}
+</table>

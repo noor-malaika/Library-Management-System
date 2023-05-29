@@ -1,0 +1,9 @@
+<h1>Call Function</h1>
+
+<form method="post" action= "{% url 'bookcopiesatallbranches' %}">
+    {% csrf_token %}
+    <label for="book_name">Enter book name:</label>
+    <input type="text" name="book_name">
+    <br>
+    <input type="submit" value="Submit">
+</form>

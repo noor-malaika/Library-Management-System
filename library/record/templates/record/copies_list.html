@@ -1,0 +1,17 @@
+<h1>Data Visualized</h1>
+<table>
+    <tr>
+        <th>Copies ID</th>
+        <th>Book ID</th>
+        <th>Branch ID</th>
+        <th>No Of Copies</th>
+    </tr>
+    {% for copy in copies %}
+        <tr>
+            <td>{{ copy.book_copies_copiesid }}</td>
+            <td>{{ copy.book_copies_bookid }}</td>
+            <td>{{ copy.book_copies_branchid }}</td>
+            <td>{{ copy.book_copies_no_of_copies }}</td>
+        </tr>{% csrf_token %}
+    {% endfor %}
+</table>

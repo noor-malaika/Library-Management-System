@@ -1,0 +1,17 @@
+<h1>Data Visualized</h1>
+<table>
+    <tr>
+        <th>Card No</th>
+        <th>Borrower Name</th>
+        <th>Borrower Address</th>
+        <th>Borrower Contact</th>
+    </tr>
+    {% for borrower in borrowers %}
+        <tr>
+            <td>{{ borrower.borrower_cardno }}</td>
+            <td>{{ borrower.borrower_borrowername }}</td>
+            <td>{{ borrower.borrower_borroweraddress }}</td>
+            <td>{{ borrower.borrower_borrowerphone }}</td>
+        </tr>{% csrf_token %}
+    {% endfor %}
+</table>

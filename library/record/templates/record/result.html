@@ -1,0 +1,16 @@
+<h1>Book Copies at all Branches</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Branch Name</th>
+        <th>No of Copies</th>
+        <th>Book Title</th>
+    </tr>
+    {% for row in result %}
+        <tr>
+            {% for value in row %}
+                <td>{{ value }}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</table>

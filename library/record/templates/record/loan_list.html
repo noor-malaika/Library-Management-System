@@ -1,0 +1,21 @@
+<h1>Data Visualized</h1>
+<table>
+    <tr>
+        <th>Loan ID</th>
+        <th>Book ID</th>
+        <th>Branch ID</th>
+        <th>Card No</th>
+        <th>Date Issued</th>
+        <th>Due Date</th>
+    </tr>
+    {% for loan in loans %}
+        <tr>
+            <td>{{ loan.book_loans_loansid }}</td>
+            <td>{{ loan.book_loans_bookid }}</td>
+            <td>{{ loan.book_loans_branchid }}</td>
+            <td>{{ loan.book_loans_cardno }}</td>
+            <td>{{ loan.book_loans_dateout }}</td>
+            <td>{{ loan.book_loans_duedate }}</td>
+        </tr>{% csrf_token %}
+    {% endfor %}
+</table>
